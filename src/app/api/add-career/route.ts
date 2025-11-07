@@ -24,6 +24,11 @@ export async function POST(request: Request) {
       country,
       province,
       employmentType,
+      teamAccess,
+      cvSecretPrompt,
+      prscreeningQuestions,
+      aiEndorsementSetting,
+      aiInterviewSecretPrompt
     } = await request.json();
 
     console.log("Received data:", {
@@ -126,6 +131,11 @@ export async function POST(request: Request) {
       country,
       province,
       employmentType,
+      teamAccess,
+      cvSecretPrompt,
+      prscreeningQuestions,
+      aiEndorsementSetting,
+      aiInterviewSecretPrompt
     };
 
     await db.collection("careers").insertOne(career);

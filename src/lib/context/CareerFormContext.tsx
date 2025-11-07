@@ -221,7 +221,12 @@ export function CareerFormProvider({ children, existingCareer }) {
           : Number(careerData.maximumSalary),
         country: careerData.country,
         province: careerData.province,
-        location: careerData.location, // Assuming careerData.location is the city
+        location: careerData.location, 
+        teamAccess: careerData.teamAccess,
+        cvSecretPrompt: careerData.cvSecretPrompt,
+        prescreeningQuestions: careerData.prescreeningQuestions,
+        aiEndorsementSetting: careerData.aiEndorsementSetting,
+        aiInterviewSecretPrompt: careerData.aiInterviewSecretPrompt,
         status,
         employmentType: careerData.employmentType,
       };
@@ -291,7 +296,7 @@ export function CareerFormProvider({ children, existingCareer }) {
         email: user.email,
       };
       const updatedCareer = {
-        _id: careerData._id, // Ensure _id is passed for update
+        _id: careerData._id,
         jobTitle: careerData.jobTitle,
         description: careerData.description,
         workSetup: careerData.workSetup,
@@ -311,7 +316,12 @@ export function CareerFormProvider({ children, existingCareer }) {
           : Number(careerData.maximumSalary),
         country: careerData.country,
         province: careerData.province,
-        location: careerData.location, // Assuming careerData.location is the city
+        location: careerData.location,
+        teamAccess: careerData.teamAccess,
+        cvSecretPrompt: careerData.cvSecretPrompt,
+        prescreeningQuestions: careerData.prescreeningQuestions,
+        aiEndorsementSetting: careerData.aiEndorsementSetting,
+        aiInterviewSecretPrompt: careerData.aiInterviewSecretPrompt,
         employmentType: careerData.employmentType,
       };
       try {
